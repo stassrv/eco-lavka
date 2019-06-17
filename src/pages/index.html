@@ -1,0 +1,64 @@
+---
+title: Эко-лавка - Beetroot Academy
+---
+<section class="ba-intro">
+    <div class="row column">
+        <div class="ba-intro__inner">
+            <div class="ba-intro__top show-for-medium">
+                Health
+                <img src="{{root}}/assets/img/bird-01.png"  alt="">
+                Style
+            </div>
+            <!-- end ba-intro__top -->
+            <h1 class="ba-page-title show-for-medium">ЭКО-ЛАВКА</h1>
+            <p class="ba-page-subtitle">товары для здоровой жизни</p>
+        </div>
+        <!-- end  ba-intro__inner-->
+    </div>
+    <!-- end  row column-->
+</section>
+<section class='ba-sales'>
+        
+        <img class="ba-sales__bird--left" src="{{root}}/assets/img/bird.png"  alt="">
+        <img  class="ba-sales__bird--right" src="{{root}}/assets/img/bird02.png"  alt="">
+    <div class="row  align-middle align-center">
+    
+        <div class="columns small-8 medium-6 large-4 ba-sales__item ">
+            <h2 class="ba-page-title text-center">ДЛЯ ВАС</h2>
+            <div class="ba-sales__body text-center">
+                   
+        
+               <p> Скидка 3% - при заказе на сумму от 500 грн. </p>
+               <p> Скидка 5% - при заказе на сумму от 1000 грн. </p>
+                <p>Скидка 7% - при заказе на сумму от 2000 грн.</p>
+            </div>
+            <!-- /ba-sales__body -->
+        </div>
+        <!-- /columns  -->
+        </div>
+    <!-- /row -->
+</section>
+
+<section class="ba-section-catalog">
+    <div class="row column text-center">
+        <h2>КАТАЛОГ</h2>
+    </div>
+    <!--  row column-->
+    <div class="row">
+           {{#each categories}}
+        <div class="columns small-6 medium-4 large-3">
+               
+            <a href="{{this.link}}" class="ba-category-link" style="background-color: {{this.color}}">
+                <div class="ba-category-link__body">
+                <h3 class="ba-category-link__title">{{this.title}}</h3>
+                <div class="ba-category-link__lable">Смотреть</div>
+            </div>
+                <!-- / ba-category-link__body-->
+            </a>
+        </div>
+        <!-- /columns -->
+        {{/each}}
+    </div>
+    <!-- /row -->
+</section>
+{{>subscribe}}

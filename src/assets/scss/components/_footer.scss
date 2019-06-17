@@ -1,0 +1,89 @@
+.ba-footer{
+    background: #fff;
+    filter:drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));
+
+}
+.ba-copyright{
+    border-top:1px solid $primary-color;
+    line-height: 36px;
+    position: relative;
+    z-index: 2;
+    @include breakpoint(medium){
+        line-height: 44px;
+
+    }
+}
+.ba-logo--footer{
+    margin-bottom:25px;
+    &:after{
+        bottom:auto;
+        top:-8px;
+      
+        @include breakpoint(medium){
+            top:-21px;
+        }
+    }
+}
+.ba-socials{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 27px;
+    a+a{
+        margin-left: 15px;
+    }
+    a{
+        width:42px;
+        height:42px;
+        border-radius: 50%;
+        background-color: $primary-color;
+        color:#fff;
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        &:hover, &:focus{
+            background-color: $secondary-color;
+        }
+
+
+    }
+    svg{
+        color:currentColor;
+    }
+}
+.ba-menu-footer-mob{
+    padding-top:22px;
+
+    @include hide-for(medium);
+
+}
+.ba-footer-col{
+    padding-top: 22px;
+    @include breakpoint(medium){
+        padding-top: 17px;
+    }
+}
+.ba-menu-footer-desktop{
+    @include show-for(medium);
+    &__title{
+        margin-bottom:20px;
+        font:700 18px/1 $body-font-family;
+        @include show-for(medium);
+    }
+  @include breakpoint(large){
+    display: block;
+    column-count: 2;
+    column-gap: 30px;
+  }
+   a{
+       font-size:14px;
+       font-weight: normal;
+       color:$primary-color;
+       &:hover, &:focus{
+           color:$secondary-color;
+       }
+   }
+}

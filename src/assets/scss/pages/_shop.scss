@@ -1,0 +1,160 @@
+.ba-main-content{
+    padding:50px 0 97px;
+
+    @include breakpoint(large){
+        padding:106px 0 226px;
+    }    
+
+}
+.breadcrumbs{
+    align-items: center;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    li{
+        display: inline-block;
+        float:none;
+        vertical-align: middle;
+
+    }
+
+    a{
+        text-decoration: none;
+
+        &:hover, &:focus{
+            text-decoration: none;
+            color:$secondary-color;
+        }
+    }
+}
+.ba-add-to-futured{
+    position: absolute;
+    top:10px;
+    right:10px;
+   &__title, &__prise{
+       font-family: $body-font-family;
+       font-weight: 700;
+   }
+   &__price{
+    margin:0;
+}
+    @include breakpoint(large){
+        top:15px;
+        right:15px;
+
+    }
+}
+.ba-product{
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    background: #ffffff;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    width: 100%;
+    @include breakpoint(medium){
+        margin-bottom: 30px;
+    }
+
+    img{
+        margin-bottom: 30px;
+    }
+    &__link{
+        padding:40px 10px 20px;
+        @include breakpoint(large){
+            padding:40px 25px 33px;
+
+        }
+        display: block;
+    }
+    &:hover, &:focus{
+        color:$secondary-color;
+    }
+}
+.pagination{
+    a{
+        font-weight:700;
+    }
+    .current{
+        font-weight:700;
+        box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+    }
+    .pagination-previous,
+    .pagination-next{
+        font-weight: 400;
+    }
+}
+
+//Filter
+
+#price-range{
+    margin-bottom:26px;
+}
+.ba-price-wrap{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    input{
+        height: 25px;
+        padding:5px 3px 3px;
+        line-height: 25px;
+        width: 65px;
+        margin:0 3px 0 0;
+    }
+    label{
+        display: flex;
+        align-items:center;
+        color:$body-font-color
+
+    }
+}
+.ba-widget{
+    margin-bottom: 50px;
+}
+.ba-checkbox{
+    display:inline-block;
+    align-items: center;
+    margin-bottom:15px;
+
+[type="checkbox"]{
+    display:none;
+}
+
+    &__input{
+        display:inline-block;
+        border:1px solid #151615;
+        width:20px;
+        height: 20px;
+        border-radius:5px;
+        vertical-align: middle;
+        flex-shrink: 0;
+        transition:0.3s;
+        transition-property:border-color, background-color;
+        margin-right:17px;
+
+        :checked ~ &{
+            border-color:$secondary-color;
+            background: $secondary-color 50% no-repeat;
+
+            background-image: url('data:image/svg+xml,\
+            <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">\
+            <path d="M0.184615 7.15C0.0615385 7.02 0 6.825 0 6.695C0 6.565 0.0615385 6.37 0.184615 6.24L1.04615 5.33C1.29231 5.07 1.66154 5.07 1.90769 5.33L1.96923 5.395L5.35385 9.23C5.47692 9.36 5.66154 9.36 5.78462 9.23L14.0308 0.195H14.0923C14.3385 -0.065 14.7077 -0.065 14.9538 0.195L15.8154 1.105C16.0615 1.365 16.0615 1.755 15.8154 2.015L5.96923 12.805C5.84615 12.935 5.72308 13 5.53846 13C5.35385 13 5.23077 12.935 5.10769 12.805L0.307692 7.345L0.184615 7.15Z" fill="black"/>\
+            </svg>');
+            
+        }
+    }
+
+}
+.ba-filter-toggle{
+    position:relative;
+    &__left-arrow{
+        position:absolute;
+        right:100%;
+        top:7px;
+        margin-right:14px;
+    }
+    &__bot-arrow{
+        display:block;
+        margin:9px auto 0;
+    }
+}

@@ -1,0 +1,111 @@
+.ba-intro{
+    background: $light-yellow url(../img/intro-bg.png) 50% no-repeat / cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    &__inner{
+        padding:67px 0 82px;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+   
+    @include breakpoint(medium){
+        min-height: 100vh;
+    }
+    
+}
+&__top{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: -20px;
+    img{
+        margin:0 15px;
+    }
+}
+
+}
+.ba-page-title{
+    line-height: 1;
+}
+.ba-page-subtitle{
+    font-weight: 700;
+    font-size: 18px;
+}
+.ba-section-catalog{
+    margin-bottom: 67px;
+    @include breakpoint(large){
+        margin-bottom:89px;
+    }
+}
+.ba-category-link{
+    background: $primary-color;
+    display:block;
+    color:$body-font-color;
+    border-radius: 5px;
+
+    position: relative;
+    // height: 0;
+    margin-bottom: 20px;
+    @include breakpoint(medium){
+        margin-bottom: 47px;
+        &:hover, &:focus{
+            color:#fff;
+        }
+    }
+
+   
+    &:after{
+        content:"";
+        height:0;
+        display: block;
+        padding-bottom: 100%;
+    }
+    &__body{
+        position: absolute;
+        top:50%;
+        left:20px;
+        right: 0;
+        transform:translateY(-50%);
+        @include breakpoint(medium){
+            left:30%;
+        }
+    }
+    &__title{
+        margin-bottom: 5px;
+        padding-bottom:5px;
+        border-bottom: 1px solid currentColor;
+        word-break: break-all;
+    }
+    &__label{
+        text-align:right;
+        padding-right: 16px;
+        @include breakpoint(small down){
+            visibility: hidden;
+        }
+
+    }
+}
+.ba-sales{
+    position: relative;
+    &__item{
+    background: #FFFDE6;
+    padding: 37px 29px 46px 27px;
+    margin:197px 0 136px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    }
+    img{
+    @include breakpoint(large down){
+        visibility: hidden;
+    }
+        position: absolute;
+        top: 90px;
+    }
+    &__bird--left{
+        left:350px;
+        top: 90px;
+    }
+    &__bird--right{
+        right:350px;  
+    }
+}
+

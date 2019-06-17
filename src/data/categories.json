@@ -1,0 +1,48 @@
+[
+    {
+        "title" : "Еда",
+        "color" : "#c69a95",
+        "link" : "eda.html"
+    },
+
+    {
+        "title" : "Напитки",
+        "color" : "#bcbc9f",
+        "link" : "napitki.html"
+    },
+    {
+        "title" : "Специи",
+        "color" : "#da7153",
+        "link" : "shop.html"
+    },
+    {
+        "title" : "Биодобавки",
+        "color" : "#DBA05A",
+        "link" : "shop.html"
+    },
+    {
+        "title" : "гигиена",
+        "color" : "#F1BB52",
+        "link" : "shop.html"
+    },
+
+    {
+        "title" : "косметика",
+        "color" : "#EF6F6F",
+        "link" : "shop.html"
+    },
+
+    {
+        "title" : "здоровье",
+        "color" : "#A4C88C",
+        "link" : "shop.html"
+    },
+    {
+        "title" : "детям",
+        "color" : " #96ADA8",
+        "link" : "shop.html"
+    }
+
+
+
+]

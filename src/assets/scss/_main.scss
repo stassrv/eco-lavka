@@ -1,0 +1,72 @@
+a, button{
+    transition: .3s ease-in;
+    transition-property: color, background-color, opacity;
+    svg{
+        fill:currentColor;
+    }
+}
+button, .button{
+    cursor: pointer;
+}
+main{
+    padding-bottom: 100px;
+}
+.ba-subscribe-form{
+    max-width: 270px;
+    margin: 0 auto;
+    label{
+        margin-bottom:5px;
+    }
+
+[type="tel"]{
+margin-bottom: 50px;
+}
+}
+#{text-input()}{
+    height:50px;
+    padding:15px 12px
+}
+.button{
+    min-width: 270px;
+    &:hover, &:focus{
+        color:#000;
+    }
+}
+
+.switch-paddle{
+    box-shadow: 0 0 0 1px #000;
+    &:after{
+        box-shadow: 0 0 0 1px #000;
+    }
+    input:checked ~ &{
+    &, &:after{
+        box-shadow: 0 0 0 1px $secondary-color;
+       
+    }
+    }
+    
+     
+    }
+    
+
+.ba-form-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    label{
+        font:inherit;
+        color:inherit;
+    }
+    .switch{
+        margin:0;
+    }
+}
+.ba-lable-small{
+    font-size: 12px;
+    color:$primary-color;
+}
+.ba-to-top{
+    display:inline-block;
+    margin-bottom:60px;
+}
